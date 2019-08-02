@@ -16,9 +16,8 @@ public class ServerEndpoint {
     @OnMessage
     public void onMessage(String message, Session session) {
         try {
-            MacAddressUtil macAddressUtil = new MacAddressUtil();
-            session.getBasicRemote().sendText(macAddressUtil.checkMacAddress(message).toString());
-        } catch (IOException ex) {
+            session.getBasicRemote().sendText(MacAddressUtil.checkMACAddress(message).toString());
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
