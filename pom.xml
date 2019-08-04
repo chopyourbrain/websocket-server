@@ -14,9 +14,11 @@
             <version>7.0</version>
         </dependency>
         <dependency>
-            <groupId>jpcap</groupId>
-            <artifactId>jpcap</artifactId>
-            <version>0.1.18-002</version>
+            <groupId>net.sourceforge.jpcap</groupId>
+            <artifactId>capture</artifactId>
+            <version>0.01.16</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/jpcap/jpcap-0.1.18-002.jar</systemPath>
         </dependency>
 
     </dependencies>
